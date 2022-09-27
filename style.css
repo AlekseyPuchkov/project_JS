@@ -1,0 +1,40 @@
+header {
+    height: 100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 4px solid #000;
+}
+
+.logo {
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.btn-cart {
+    background-color: forestgreen;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.products {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buy-bth {
+    margin-bottom: 20px;
+
+}
