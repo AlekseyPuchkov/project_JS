@@ -24,7 +24,6 @@ header {
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .product-item {
@@ -32,9 +31,17 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: bisque;
+    width: 250px;
 }
 
-.buy-bth {
-    margin-bottom: 20px;
+img {
+    margin-top: 30px;
+}
 
+.buy-btn {
+    margin-bottom: 30px;
+    padding: 5px 20px;
+    background-color: darkgrey;
+    font-size: 18px;
 }
