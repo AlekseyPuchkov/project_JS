@@ -34,7 +34,34 @@ header {
     align-items: center;
 }
 
-.buy-bth {
+.buy-btn {
     margin-bottom: 20px;
 
+}
+
+.invisible {
+    display: none;
+}
+
+.cart-item {
+    width: 450px;
+    border: 1px solid #000;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-block {
+    position: absolute;
+}
+
+.product-bio {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rignt-block {
+    display: flex;
+    align-items: center;
 }
