@@ -27,7 +27,6 @@ class ProductList {
         const block = document.querySelector(this.container);
         for (let product of this.goods) {
             const productObj = new ProductItem(product);
-            this.allProducts.push(productObj);
             block.insertAdjacentHTML('beforeend', productObj.render())
         }
     }
@@ -95,20 +94,22 @@ class Basket {
 class BasketItem {
     render(product, img = 'https://via.placeholder.com/50x50') {
         return `<div class="cart-item" data-id="${product.id_product}">
-                <div class="product-bio">
-                <img src="${img}" alt="Some image">
-                <div class="product-desk">
-                <p class="product-title">${product.product_name}</p>
-                <p class="product-quantity">Quantity: ${product.quantity}</p>
-                <p class="product-single-price">${product.price} each</p>
-                </div>
-                </div>
-                <div class="rignt-block">
-                <p class="product-price">${product.quantity * product.price}$</p>
-                <button class="del-btn" data-id="${product.id_product}">X</button>
-                </div>
+                 <div class="product-bio">
+                  <img src="${img}" alt="Some image">
+                  <div class="product-desk">
+                   <p class="product-title">${product.product_name}</p>
+                   <p class="product-quantity">Quantity: ${product.quantity}</p>
+                   <p class="product-single-price">${product.price} each</p>
+                  </div>
+                 </div>
+                 <div class="rignt-block">
+                  <p class="product-price">${product.quantity * product.price}$</p>
+                  <button class="del-btn" data-id="${product.id_product}">Удалить</button>
+                 </div>
                 </div>`
     }
 }
 
 new Basket();
+
+
